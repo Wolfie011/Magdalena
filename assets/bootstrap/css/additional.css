@@ -1,0 +1,106 @@
+*:before,
+*:after {
+  content: "";
+}
+      /* Hero Header: background image with overlay */
+      .hero-header {
+        position: relative;
+        height: 100vh;
+        background: rgba(44, 77, 58, 0.507) url('/assets/img/mieszkanie1.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      /* Media query for smaller screens */
+      @media (max-width: 768px) {
+        header,
+        section {
+          height: auto;
+          padding: 60px 0;
+        }
+      }
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+.vertical-lines {
+  height: 10px;
+  background-image: linear-gradient(
+    90deg,
+    currentColor,
+    currentColor 33.33%,
+    transparent 33.33%,
+    transparent 100%
+  );
+  background-size: 3px 100%;
+  width: 80%;
+}
+
+.bookends {
+  position: relative;
+  border-width: 5px;
+  border-color: hsl(0, 0%, 50%) transparent;
+  height: 11px;
+  border-style: double;
+  width: 70%;
+}
+.bookends:before,
+.bookends:after {
+  position: absolute;
+  bottom: -3.536px;
+  width: 7.071px;
+  height: 7.071px;
+  display: block;
+  border-width: 0 7.071px 7.071px 0;
+  border-color: hsl(0, 0%, 50%);
+  border-style: double;
+  box-sizing: border-box;
+}
+.bookends:before {
+  transform: translateZ(0) rotate(-45deg);
+  left: -21px;
+}
+.bookends:after {
+  transform: translateZ(0) rotate(135deg);
+  right: -21px;
+}
+.photo-stack {
+    position: relative;    /* So the pseudo-element can be positioned inside */
+    display: inline-block; /* or block, depending on your layout needs */
+  }
+  
+  /* Ensure the main image is above the pseudo-element */
+  .photo-stack img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%; /* keeps image responsive */
+  }
+  
+  /* Create the white "copy" behind the image */
+  .photo-stack::before {
+    content: "";
+    position: absolute;
+    top: 15px;    /* adjust for desired vertical offset */
+    left: 15px;   /* adjust for desired horizontal offset */
+    width: 100%;  /* match the image's width */
+    height: 100%; /* match the image's height */
+    background-color: #fff; /* white background */
+    z-index: 1;             /* behind the image */
+  }
+  section#nieruchomosci .card {
+    width: 424px;
+    margin: 0 auto; /* Center the carousel in its column */
+  }
+
+  section#nieruchomosci .carousel {
+    width: 420px;
+    height: 360px;
+    margin: 0 auto; /* Center the carousel in its column */
+  }
+  
+  section#nieruchomosci .carousel-item img {
+    width: 420px;
+    height: 360px;
+    object-fit: cover;
+  }
