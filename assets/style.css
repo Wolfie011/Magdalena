@@ -1,0 +1,232 @@
+:root {
+  --primary-color-nav: #213a2b;
+  --primary-color-body: #326647;
+  --secondary-color-body: #ffffff;
+  --accent-color: #b89e14;
+  --btn-bg: #c4a717;
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+/* Navigation & Hero */
+.nav-primary {
+  background-color: var(--primary-color-nav);
+  color: white;
+}
+
+.hero-header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(44, 77, 58, 0), rgba(44, 77, 58, 0.5)),
+    url("/assets/img/tlo_magda.png") no-repeat center center;
+  background-size: cover;
+}
+/* Apply vertical border to the .separator elements on larger screens */
+@media (min-width: 992px) {
+    .separator {
+      border-right: 1px solid #ddd; /* Adjust color and width as needed */
+    }
+    /* Remove border on the last column in each row */
+    .separator:last-child {
+      border-right: none;
+    }
+  }
+  
+/* Body Background Variants */
+.body-primary {
+  background-color: var(--primary-color-body);
+  color: white;
+}
+
+.body-secondary {
+  background-color: var(--secondary-color-body);
+  color: black;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  header,
+  section {
+    height: auto;
+    padding: 60px 0;
+  }
+}
+
+/* Nieruchomosci Section (Example) */
+section#nieruchomosci .card {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+section#nieruchomosci .carousel-item {
+  aspect-ratio: 7 / 6;
+  overflow: hidden;
+}
+
+section#nieruchomosci .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Custom box shadow for the image */
+.shadow-custom {
+  box-shadow: 8px 8px rgb(44, 44, 44);
+  border-radius: 0.5rem; /* Slight rounding for large screens */
+}
+
+@media (max-width: 992px) {
+  section#nieruchomosci .card {
+    max-width: 100%;
+  }
+}
+.mb-8 {
+  margin-bottom: 4.5rem !important;
+}
+.mb-9 {
+  margin-bottom: 5rem !important;
+}
+.mb-auto {
+  margin-bottom: auto !important;
+}
+.py-8 {
+  padding-bottom: 4.5rem !important;
+  padding-top: 4.5rem !important;
+}
+.py-9 {
+  padding-bottom: 5rem !important;
+  padding-top: 5rem !important;
+}
+@media (min-width: 576px) {
+  .mb-sm-8 {
+    margin-bottom: 4.5rem !important;
+  }
+  .mb-sm-9 {
+    margin-bottom: 5rem !important;
+  }
+  .mb-sm-auto {
+    margin-bottom: auto !important;
+  }
+  .py-sm-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+  .py-sm-9 {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .mb-md-8 {
+    margin-bottom: 4.5rem !important;
+  }
+  .mb-md-9 {
+    margin-bottom: 5rem !important;
+  }
+  .mb-md-auto {
+    margin-bottom: auto !important;
+  }
+  .py-md-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+  .py-md-9 {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .mb-lg-8 {
+    margin-bottom: 4.5rem !important;
+  }
+  .mb-lg-9 {
+    margin-bottom: 5rem !important;
+  }
+  .mb-lg-auto {
+    margin-bottom: auto !important;
+  }
+  .py-lg-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+  .py-lg-9 {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .mb-xl-8 {
+    margin-bottom: 4.5rem !important;
+  }
+  .mb-xl-9 {
+    margin-bottom: 5rem !important;
+  }
+  .mb-xl-auto {
+    margin-bottom: auto !important;
+  }
+  .py-xl-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+  .py-xl-9 {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .mb-xxl-8 {
+    margin-bottom: 4.5rem !important;
+  }
+  .mb-xxl-9 {
+    margin-bottom: 5rem !important;
+  }
+  .mb-xxl-auto {
+    margin-bottom: auto !important;
+  }
+  .py-xxl-8 {
+    padding-bottom: 4.5rem !important;
+    padding-top: 4.5rem !important;
+  }
+  .py-xxl-9 {
+    padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+  }
+}
+
+#carouselTestimonials1 {
+    min-height: 300px; /* adjust as needed */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    top: 15%;
+    transform: translateY(-50%);
+    width: 5%;  /* You can adjust this value */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    margin: 0 -50px;
+}
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+}
+/* Apply only to columns that are not the last-child */
+.row.text-center.w-100.mb-5 .col-xl-3:not(:last-child) {
+    position: relative; /* Make sure pseudo-element is positioned correctly */
+    padding-right: 20px; /* Spacing so text doesn't clash with the pseudo-element */
+  }
+  
+  /* Create the partial border using a pseudo-element */
+  .row.text-center.w-100.mb-5 .col-xl-3:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;          /* Aligns the border to the right edge */
+    top: 10%;          /* 10% from the top, so total height will be 80% */
+    bottom: 10%;       /* 10% from the bottom */
+    width: 2px;        /* Border thickness */
+    background-color: rgba(255, 255, 255, 0.3); /* Faded white color */
+  }
+  
