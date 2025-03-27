@@ -194,25 +194,6 @@ section#nieruchomosci .carousel-item img {
   }
 }
 
-#carouselTestimonials1 {
-    min-height: 300px; /* adjust as needed */
-}
-.carousel-control-prev,
-.carousel-control-next {
-    top: 15%;
-    transform: translateY(-50%);
-    width: 5%;  /* You can adjust this value */
-}
-.carousel-control-prev,
-.carousel-control-next {
-    margin: 0 -50px;
-}
-@media (max-width: 768px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 10%;
-    }
-}
 /* Apply only to columns that are not the last-child */
 .row.text-center.w-100.mb-5 .col-xl-3:not(:last-child) {
     position: relative; /* Make sure pseudo-element is positioned correctly */
