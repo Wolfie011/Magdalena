@@ -12,7 +12,13 @@
 .text-accent2 {
   color: var(--btn-bg);
 }
-
+#sprawdz-oferte{
+  border: 3px solid white !important;
+}
+#sprawdz-oferte:hover{
+  background-color: white;
+  color: black;
+}
 /* Navigation & Hero */
 .nav-primary {
   background-color: var(--primary-color-nav);
@@ -24,6 +30,13 @@
   height: 100vh;
   background: linear-gradient(rgba(44, 77, 58, 0), rgba(44, 77, 58, 0.5)),
     url("/assets/img/tlo_magda.png") no-repeat center center;
+  background-size: cover;
+}
+.aboutme {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(44, 77, 58, 0.5), rgba(44, 77, 58, 1)),
+    url("/assets/img/tlozamagda.png") no-repeat center center;
   background-size: cover;
 }
 /* Apply vertical border to the .separator elements on larger screens */
