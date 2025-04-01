@@ -9,6 +9,9 @@
 .text-accent {
   color: var(--accent-color);
 }
+.text-accent2 {
+  color: var(--btn-bg);
+}
 
 /* Navigation & Hero */
 .nav-primary {
@@ -37,6 +40,11 @@
 /* Body Background Variants */
 .body-primary {
   background-color: var(--primary-color-body);
+  color: white;
+}
+
+.body-asd {
+  background-color: var(--btn-bg);
   color: white;
 }
 
