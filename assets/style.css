@@ -9,6 +9,9 @@
 .text-accent {
   color: var(--accent-color);
 }
+.text-primary-bottle {
+  color: var(--primary-color-body);
+}
 .text-accent2 {
   color: var(--btn-bg);
 }
@@ -29,14 +32,21 @@
   position: relative;
   height: 100vh;
   background: linear-gradient(rgba(44, 77, 58, 0), rgba(44, 77, 58, 0.5)),
-    url("/assets/img/tlo_magda.png") no-repeat center center;
+    url("/assets/img/1.png") no-repeat center center;
   background-size: cover;
 }
 .aboutme {
   position: relative;
   height: 100vh;
-  background: linear-gradient(rgba(44, 77, 58, 0.5), rgba(44, 77, 58, 1)),
-    url("/assets/img/tlozamagda.png") no-repeat center center;
+  background: linear-gradient(rgba(44, 77, 58, 0.95), rgba(44, 77, 58, 0.95)),
+    url("/assets/img/3.png") no-repeat center center;
+  background-size: cover;
+}
+.opinie {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(44, 77, 58, 1), rgba(44, 77, 58, 0.8)),
+    url("/assets/img/4.png") no-repeat center center;
   background-size: cover;
 }
 /* Apply vertical border to the .separator elements on larger screens */
@@ -50,6 +60,15 @@
     }
   }
   
+  .social-card {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    text-decoration: none;
+  }
+  .social-card:hover {
+    background-color: #e9ecef;
+  }
 /* Body Background Variants */
 .body-primary {
   background-color: var(--primary-color-body);

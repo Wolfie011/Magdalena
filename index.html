@@ -490,10 +490,10 @@
                    style="object-fit: cover;">
             </div>
             <!-- Text Column -->
-            <div class="col-12 col-lg-6 col-xl-7 d-flex">
+            <div class="col-12 col-lg-6 col-xl-6 d-flex mx-3">
               <div class="d-flex flex-column justify-content-between h-100">
                 <!-- Top: Heading & Text -->
-                  <h2 class="text-uppercase text-light text-left" style="text-shadow: black 4px 6px;">
+                  <h2 class="text-uppercase text-light text-left">
                     Kim jestem?
                   </h2>
                   <div class="my-auto">
@@ -540,7 +540,7 @@
         <div class="container text-center mb-5">
             <div class="row justify-content-md-center">
                 <div class="col-12 col-md-10 col-lg-8 col-xl-8 col-xxl-12">
-                    <h2 class="mb-4 text-dark text-uppercase">Usługi</h2>
+                    <h2 class="mb-4 text-dark text-uppercase">Oferta</h2>
                     <p class="text-secondary mb-5">
                         Oferuję kompleksowe wsparcie na każdym etapie sprzedaży lub zakupu
                         nieruchomości – od szczegółowej analizy rynku, przez indywidualne
@@ -593,7 +593,7 @@
                 <div class="col-10 col-md-5 col-xl-4">
                     <div class="row gy-4">
                         <div class="col-12 col-lg-2">
-                            <img class="img-fluid" src="/assets/img/icon/3.png" alt="icon">
+                            <img class="img-fluid" style="height: 50px;" src="/assets/img/icon/3.png" alt="icon">
 
                         </div>
                         <div class="col-12 col-lg-10">
@@ -660,13 +660,13 @@
     </section>
 
     <!-- Opinie Section -->
-    <section id="opinie" class="body-primary pb-0" style="height: 100vh">
+    <section id="opinie" class="opinie body-primary" style="height: 100vh">
         <div class="container d-flex flex-column justify-content-between align-items-center" style="min-height: 100%">
-            <div class="row text-center">
+            <div class="row text-center mb-5">
                 <h1 class="text-uppercase">Co mówią o mnie klienci?</h1>
-                <p class="d-block mb-5 fs-4 text-secondary">
+                <!-- <p class="d-block mb-5 fs-4 text-secondary">
                     „Opinie moich Klientów mówią same za siebie.”
-                </p>
+                </p> -->
             </div>
 
             <div class="row">
@@ -711,126 +711,58 @@
         </div>
     </section>
 
-    <!-- Kontakt Section -->
-    <section id="kontakt" class="body-secondary d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh">
-        <div class="container">
-          <h2 class="text-uppercase text-center text-dark mb-5">
-            Porozmawiajmy!
-          </h2>
-          <div class="row">
-            <!-- Contact Form -->
-            <div class="col-12 col-md-6 mb-4">
-              <form id="contactForm" name="sentMessage">
-                <div class="mb-3 form-floating">
-                  <input class="form-control" type="text" id="name" required placeholder="Name" />
-                  <label for="name">Imię i Nazwisko</label>
-                  <small class="form-text text-danger help-block"></small>
-                </div>
-                <div class="mb-3 form-floating">
-                  <input class="form-control" type="email" id="email" required placeholder="Email Address" />
-                  <label for="email">Adres Email</label>
-                  <small class="form-text text-danger help-block"></small>
-                </div>
-                <div class="mb-3 form-floating">
-                  <input class="form-control" type="tel" id="phone" required placeholder="Phone Number" />
-                  <label for="phone">Numer Telefonu</label>
-                  <small class="form-text text-danger help-block"></small>
-                </div>
-                <div class="mb-5 form-floating">
-                  <textarea class="form-control" id="message" required placeholder="Message" style="height: 150px"></textarea>
-                  <label for="message">Wiadomość</label>
-                  <small class="form-text text-danger help-block"></small>
-                </div>
-                <div id="success"></div>
-                <div>
-                  <button class="btn btn-xl" id="sendMessageButton" style="background-color: black;" type="submit">
-                    Wyślij
-                  </button>
-                </div>
-              </form>
+<!-- Kontakt Section -->
+<section id="kontakt" class="body-secondary d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh">
+    <div class="container">
+      <h2 class="text-uppercase text-center text-dark mb-5">
+        Porozmawiajmy!
+      </h2>
+      <div class="row justify-content-center">
+        <!-- Contact Form -->
+        <div class="col-12 col-md-6 mb-4">
+          <form id="contactForm" name="sentMessage">
+            <div class="mb-3 form-floating">
+              <input class="form-control" type="text" id="name" required placeholder="Name" />
+              <label for="name">Imię i Nazwisko</label>
+              <small class="form-text text-danger help-block"></small>
             </div>
-            <!-- Contact Details & Social Media Grid -->
-            <div class="col-12 col-md-6">
-              <!-- Social Media Grid -->
-<div class="row row-cols-2 g-3 mt-3">
-    <!-- Facebook -->
-    <div class="col">
-      <a href="https://facebook.com" target="_blank" class="d-block text-dark social-card text-center">
-        <div class="ratio ratio-1x1 d-flex align-items-center justify-content-center">
-          <div>
-            <i class="bi bi-facebook" style="font-size: 4rem;"></i>
-            <h3 class="mb-0">Facebook</h3>
-          </div>
-        </div>
-      </a>
-    </div>
-    <!-- Instagram -->
-    <div class="col">
-      <a href="https://instagram.com" target="_blank" class="d-block text-dark social-card text-center">
-        <div class="ratio ratio-1x1 d-flex align-items-center justify-content-center">
-          <div>
-            <i class="bi bi-instagram" style="font-size: 4rem;"></i>
-            <h3 class="mb-0">Instagram</h3>
-          </div>
-        </div>
-      </a>
-    </div>
-    <!-- Messenger -->
-    <div class="col">
-      <a href="https://messenger.com" target="_blank" class="d-block text-dark social-card text-center">
-        <div class="ratio ratio-1x1 d-flex align-items-center justify-content-center">
-          <div>
-            <i class="bi bi-messenger" style="font-size: 4rem;"></i>
-            <h3 class="mb-0">Messenger</h3>
-          </div>
-        </div>
-      </a>
-    </div>
-    <!-- TikTok -->
-    <div class="col">
-      <a href="https://tiktok.com" target="_blank" class="d-block text-dark social-card text-center">
-        <div class="ratio ratio-1x1 d-flex align-items-center justify-content-center">
-          <div>
-            <i class="fa fa-tiktok" style="font-size: 4rem;"></i>
-            <h3 class="mb-0">TikTok</h3>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <!-- Inline CSS for Social Media Cards -->
-  <style>
-    .social-card {
-      background-color: #f8f9fa;
-      border-radius: 0.5rem;
-      transition: background-color 0.3s;
-      text-decoration: none;
-    }
-    .social-card:hover {
-      background-color: #e9ecef;
-    }
-  </style>
-  
+            <div class="mb-3 form-floating">
+              <input class="form-control" type="email" id="email" required placeholder="Email Address" />
+              <label for="email">Adres Email</label>
+              <small class="form-text text-danger help-block"></small>
             </div>
-          </div>
+            <div class="mb-3 form-floating">
+              <input class="form-control" type="tel" id="phone" required placeholder="Phone Number" />
+              <label for="phone">Numer Telefonu</label>
+              <small class="form-text text-danger help-block"></small>
+            </div>
+            <div class="mb-5 form-floating">
+              <textarea class="form-control" id="message" required placeholder="Message" style="height: 150px"></textarea>
+              <label for="message">Wiadomość</label>
+              <small class="form-text text-danger help-block"></small>
+            </div>
+            <div id="success"></div>
+            <div>
+              <button class="btn btn-xl w-100" id="sendMessageButton" style="background-color: black;" type="submit">
+                Wyślij
+              </button>
+            </div>
+          </form>
         </div>
-      </section>
-      
-      <!-- Inline CSS for Social Media Cards -->
-      <style>
-        .social-card {
-          background-color: #f8f9fa;
-          border-radius: 0.5rem;
-          transition: background-color 0.3s;
-          text-decoration: none;
-        }
-        .social-card:hover {
-          background-color: #e9ecef;
-        }
-      </style>
-      
-      
+      </div>
+      <!-- Social Links Section -->
+      <div class="d-flex justify-content-center gap-3 mt-5">
+        <a href="https://facebook.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center social-card" style="width: 350px; height: 150px;">
+          <i class="bi bi-facebook text-primary-bottle" style="font-size: 4rem;"></i>
+          <h3 class="mb-0 text-dark">Facebook</h3>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center social-card" style="width: 350px; height: 150px;">
+          <i class="bi bi-instagram text-primary-bottle" style="font-size: 4rem;"></i>
+          <h3 class="mb-0 text-dark">Instagram</h3>
+        </a>
+      </div>
+    </div>
+  </section>
 
     <div class="text-center text-white copyright py-4">
         <div class="container">
