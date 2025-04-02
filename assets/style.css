@@ -5,7 +5,12 @@
   --accent-color: #b89e14;
   --btn-bg: #c4a717;
 }
-
+.img-object-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover; /* Fallback for some older browsers */
+}
 .text-accent {
   color: var(--accent-color);
 }
