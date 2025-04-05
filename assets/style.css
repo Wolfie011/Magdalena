@@ -3,77 +3,86 @@
   --primary-color-body: #326647;
   --secondary-color-body: #ffffff;
   --accent-color: #DDB760;
+  --navbar-link-color: white;
+  --navbar-hover-border: 2px solid white;
+  --social-card-bg: #f0f0f0;
+  --social-card-bg-hover: #d3d3d3;
 }
 
+/* Navbar Styles */
 .navbar {
   background-color: var(--primary-color-nav) !important;
 }
 .navbar-nav > li > a {
-  color: white !important;
+  color: var(--navbar-link-color) !important;
 }
-.navbar-nav>li.nav-item>a.nav-link:hover {
-  border-bottom: 2px solid white !important;
+.navbar-nav > li.nav-item > a.nav-link:hover,
+.navbar-nav > li.nav-item > a.nav-link.active {
+  border-bottom: var(--navbar-hover-border) !important;
 }
-.navbar-nav>li.nav-item>a.nav-link.active {
+.navbar-nav > li.nav-item > a.nav-link.active {
   background-color: transparent !important;
-  border-bottom: 2px solid white !important;
 }
-#mainNav .navbar-toggler{
-  background-color: #DDB760 !important;
+#mainNav .navbar-toggler {
+  background-color: var(--accent-color) !important;
 }
 
+/* Background Images */
 .bg-image {
   position: relative;
   height: 100vh;
 }
 .hero-header {
   background: linear-gradient(rgba(44, 77, 58, 0), rgba(44, 77, 58, 0.5)),
-    url("/assets/img/1.png") no-repeat center center;
-    background-size: cover;
+              url("/assets/img/1.png") no-repeat center center;
+  background-size: cover;
 }
 .aboutme {
   background: linear-gradient(rgba(44, 77, 58, 0.95), rgba(44, 77, 58, 0.95)),
-    url("/assets/img/3.png") no-repeat center center;
-    background-size: cover;
+              url("/assets/img/3.png") no-repeat center center;
+  background-size: cover;
 }
 .opinie {
   background: linear-gradient(rgba(44, 77, 58, 1), rgba(44, 77, 58, 0.8)),
-    url("/assets/img/4.png") no-repeat center center;
+              url("/assets/img/4.png") no-repeat center center;
   background-size: cover;
 }
 
+/* Shadows */
 .aboutme-shadow {
   box-shadow: 8px 8px rgb(44, 44, 44);
-  border-radius: 0.5rem; /* Slight rounding for large screens */
+  border-radius: 0.5rem;
 }
 
+/* Social Card */
 .social-card {
-  background-color: #f0f0f0;
+  background-color: var(--social-card-bg);
   transition: background-color 0.3s ease;
 }
 .social-card:hover {
-  background-color: #d3d3d3;
+  background-color: var(--social-card-bg-hover);
 }
 
+/* Review Grid */
 .review-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
-/* For screens below 992px, switch to 2 columns */
+/* Responsive Review Grid */
 @media (max-width: 992px) {
-  header.masthead h1, header.masthead .h1{
+  header.masthead h1,
+  header.masthead .h1 {
     font-size: 3.5rem !important;
   }
   .review-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* For screens below 768px, use a single column */
 @media (max-width: 768px) {
-  header.masthead h1, header.masthead .h1{
+  header.masthead h1,
+  header.masthead .h1 {
     font-size: 2.5rem !important;
   }
   .review-grid {
@@ -81,52 +90,64 @@
   }
 }
 
+/* Card & Carousel */
 .fixed-card {
   overflow: hidden;
 }
-
-/* Ensure images fill the card width */
 .card-img-top {
   width: 100%;
   display: block;
 }
 
-/* Nieruchomosci Section */
+/* Nieruchomości Section Cards */
 section#nieruchomosci .card {
   max-width: 420px;
   margin: 0 auto;
 }
-
 @media (max-width: 992px) {
   section#nieruchomosci .card {
     max-width: 100%;
   }
 }
-
 section#nieruchomosci .carousel-item {
   aspect-ratio: 7 / 6;
   overflow: hidden;
 }
-
 section#nieruchomosci .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* Modal Customization */
 .modal-custom {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .modal-header {
   padding: 1rem 1.5rem;
 }
-
 .modal-body {
   padding: 1.5rem;
 }
-
 .bg-dark.text-white a.btn-link {
   font-size: 1rem;
+}
+/* Notification styling with transition for fade in/out */
+#noMoreOffers {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  z-index: 1050;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease;
+}
+#noMoreOffers.show {
+  display: block;
+  opacity: 1;
 }
